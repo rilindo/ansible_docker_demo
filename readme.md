@@ -1,1 +1,1 @@
-Demo code for using Ansible with Docker
+Demo code for using Ansible with Docker.

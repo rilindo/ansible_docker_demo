@@ -1,0 +1,3 @@
+- src: https://github.com/angstwad/docker.ubuntu
+  name: angstwad.docker.ubuntu
+  version: master

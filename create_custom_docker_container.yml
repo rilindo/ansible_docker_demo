@@ -1,0 +1,21 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  vars_files:
+    - secret.yml
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: login to docker registry
+    docker_login:
+      username: "{{ docker_hub_username }}"
+      password: "{{ docker_hub_password }}"
+      email: "{{ docker_hub_email }}"
+  - name: create custom docker container
+    docker_container:
+      name: mycustomcontainer
+      image: rilindo/myapacheweb:v1
+      state: present
+      network_mode: bridge
+      exposed_ports: "80"
+      published_ports: "80:80"

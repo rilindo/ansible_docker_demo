@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: create docker container
+    docker_container:
+      name: mycontainer
+      image: ubuntu
+      state: absent

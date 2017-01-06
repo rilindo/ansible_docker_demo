@@ -15,7 +15,7 @@
     docker_container:
       name: mycustomcontainer
       image: rilindo/myapacheweb:v1
-      state: present
+      state: started
       network_mode: bridge
       exposed_ports: "80"
       published_ports: "80:80"

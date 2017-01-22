@@ -7,6 +7,6 @@
       --log-level=debug
   remote_user: ubuntu
   become: yes
-  become_user: ubuntu
+  become_user: sudo
   roles:
     - angstwad.docker.ubuntu

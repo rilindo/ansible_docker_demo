@@ -9,4 +9,4 @@
   become: yes
   become_user: sudo
   roles:
-    - angstwad.docker.ubuntu
+    - angstwad.docker_ubuntu

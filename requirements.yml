@@ -1,5 +1,5 @@
 - src: https://github.com/angstwad/docker.ubuntu
-  name: angstwad.docker.ubuntu
+  name: angstwad.docker_ubuntu
   version: master
 - src: https://github.com/wunzeco/ansible-docker
   name: wunzeco.docker
